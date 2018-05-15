@@ -5,7 +5,7 @@ class CashRegister
     @total = 0
     @discount = discount
     @items = []
-    
+
 
 
   end
@@ -17,9 +17,9 @@ class CashRegister
   def apply_discount
     @total -= @total * @discount / 100
     if self.discount == 0
-    "After the discount, the total comes to $#{@total}."
+        "There is no discount to apply."  
     else
-      "There is no discount to apply."
+      "After the discount, the total comes to $#{@total}."
     end
 end
   def items
