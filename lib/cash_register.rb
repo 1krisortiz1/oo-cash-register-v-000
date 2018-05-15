@@ -12,7 +12,7 @@ class CashRegister
   end
 
   def apply_discount(total, discount, items)
-    self.total.float * discount
+    self.total.float * self.discount
   end
 
   def items
